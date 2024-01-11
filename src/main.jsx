@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import RootLayout from './routes/RootLayout.jsx'
 import AuthInputs from './routes/AuthInputs.jsx';
+import LandingPage from './routes/LandingPage.jsx'
 import './styles/index.scss'
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <AuthInputs/>
+      },
+      {
+        index: true,
+        element: <LandingPage/>
       }
     ],
   },
