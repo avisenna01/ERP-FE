@@ -15,13 +15,22 @@ export default function LandingPage() {
         <div>
            <section>
                 <Carousel className="rounded-xl">
-                    <CarouselContent imgSrc={BackgroundSlide1}></CarouselContent>
-                    <div className="relative h-full w-full">
-                        <img src={BackgroundSlide2} alt="image 2" className="h-full w-full object-cover"/>  
-                    </div>
-                    <div>
-                        <img src={BackgroundSlide3} alt="image 3" className="h-full w-full object-cover"/>  
-                    </div>
+                    <CarouselContent imgSrc={BackgroundSlide1} alt="image 1">It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.</CarouselContent>
+                    <CarouselContent imgSrc={BackgroundSlide2} alt="image 2">
+                            It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.
+                    </CarouselContent>
+                    <CarouselContent imgSrc={BackgroundSlide3} alt="image 3">
+                            It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.
+                    </CarouselContent>
                 </Carousel>
             </section> 
             <section className="flex justify-center">

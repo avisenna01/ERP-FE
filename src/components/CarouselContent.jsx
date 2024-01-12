@@ -1,9 +1,9 @@
 import {Typography, Button} from "@material-tailwind/react";
 
-export default function CarouselContent({imgSrc, children,...props}) {
+export default function CarouselContent({imgSrc, alt, children,...props}) {
     return (
         <div className="relative h-full w-full">
-        <img src={imgSrc} alt="image 1" className="h-full w-full object-cover"/>                    
+        <img src={imgSrc} alt={alt} className="h-full w-full object-cover"/>                    
         <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
             <div className="w-3/4 text-center md:w-2/4">
                 <Typography
@@ -18,10 +18,7 @@ export default function CarouselContent({imgSrc, children,...props}) {
                 color="white"
                 className="mb-12 opacity-80"
                 >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something, that quality
-                of air that emanation from old trees, that so wonderfully changes
-                and renews a weary spirit.
+               {children}
                 </Typography>
                 <div className="flex justify-center gap-2">
                     <Button size="lg" color="white">
