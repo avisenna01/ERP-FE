@@ -1,17 +1,53 @@
-
-
-export default function Footer() {
+import { Typography } from "@material-tailwind/react";
+ 
+export function Footer() {
   return (
-    <footer className="flex flex-col items-center mt-8 mb-8 md:mb-16">
-      {/* <img
-        src={logo}
-        alt="A canvas"
-        className="object-contain mb-8 w-44 h-44"
-      /> */}
-      <h1 className="text-xl font-semibold tracking-widest text-center uppercase md:text-4xl text-amber-800 font-title">
-        Footer art
-      </h1>
-      <p className="text-stone-500">lorem ipsum.</p>
+    <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
+      <Typography color="blue-gray" className="font-normal">
+        &copy; 2023 Material Tailwind
+      </Typography>
+      <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+        <li>
+          <Typography
+            as="a"
+            href="#"
+            color="blue-gray"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            About Us
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="#"
+            color="blue-gray"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            License
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="#"
+            color="blue-gray"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            Contribute
+          </Typography>
+        </li>
+        <li>
+          <Typography
+            as="a"
+            href="#"
+            color="blue-gray"
+            className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+          >
+            Contact Us
+          </Typography>
+        </li>
+      </ul>
     </footer>
   );
 }
