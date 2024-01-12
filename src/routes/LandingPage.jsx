@@ -14,7 +14,7 @@ export default function LandingPage() {
     return (
         <div>
            <section>
-                <Carousel className="rounded-xl">
+                <Carousel>
                     <CarouselContent imgSrc={BackgroundSlide1} alt="image 1">It is not so much for its beauty that the forest makes a claim
                         upon men&apos;s hearts, as for that subtle something, that quality
                         of air that emanation from old trees, that so wonderfully changes
