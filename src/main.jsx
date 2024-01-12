@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-
+import { ThemeProvider } from "@material-tailwind/react";
 import RootLayout from './routes/RootLayout.jsx'
 import AuthInputs from './routes/AuthInputs.jsx';
+import LandingPage from './routes/LandingPage.jsx'
 import './styles/index.scss'
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <AuthInputs/>
+      },
+      {
+        index: true,
+        element: <LandingPage/>
       }
     ],
   },
@@ -30,6 +35,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider> 
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
