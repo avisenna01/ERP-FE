@@ -11,21 +11,24 @@ import BackgroundSlide3 from '../assets/carousel_slide_3.webp';
 
 export default function LandingPage() {
 
+    // let x = true
+    // let y = false
+
     return (
         <div>
            <section>
-                <Carousel>
-                    <CarouselContent imgSrc={BackgroundSlide1} alt="image 1">It is not so much for its beauty that the forest makes a claim
+                <Carousel className="items-center">
+                    <CarouselContent top={true} title="The Beauty of ERP" imgSrc={BackgroundSlide1} alt="image 1">It is not so much for its beauty that the forest makes a claim
                         upon men&apos;s hearts, as for that subtle something, that quality
                         of air that emanation from old trees, that so wonderfully changes
                         and renews a weary spirit.</CarouselContent>
-                    <CarouselContent imgSrc={BackgroundSlide2} alt="image 2">
+                    <CarouselContent top={true} title="Based on your Business Needs" imgSrc={BackgroundSlide2} alt="image 2">
                             It is not so much for its beauty that the forest makes a claim
                         upon men&apos;s hearts, as for that subtle something, that quality
                         of air that emanation from old trees, that so wonderfully changes
                         and renews a weary spirit.
                     </CarouselContent>
-                    <CarouselContent imgSrc={BackgroundSlide3} alt="image 3">
+                    <CarouselContent top={true} title="Exceptional Features" imgSrc={BackgroundSlide3} alt="image 3">
                             It is not so much for its beauty that the forest makes a claim
                         upon men&apos;s hearts, as for that subtle something, that quality
                         of air that emanation from old trees, that so wonderfully changes
@@ -64,9 +67,27 @@ export default function LandingPage() {
             </section>
             <section>
 {/* description */}
+<div><p>this section is about description</p></div>
             </section>
             <section>
-{/* carousel */}
+                <Carousel className="items-center">
+                     <CarouselContent top={false} title="content 1" imgSrc={BackgroundSlide1} alt="image 1">It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.</CarouselContent>
+                    <CarouselContent top={false} title="content 2" imgSrc={BackgroundSlide2} alt="image 2">
+                            It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.
+                    </CarouselContent>
+                    <CarouselContent top={false} title="content 3" imgSrc={BackgroundSlide3} alt="image 3">
+                            It is not so much for its beauty that the forest makes a claim
+                        upon men&apos;s hearts, as for that subtle something, that quality
+                        of air that emanation from old trees, that so wonderfully changes
+                        and renews a weary spirit.
+                    </CarouselContent>
+                    </Carousel> 
             </section>
         </div>
     )
